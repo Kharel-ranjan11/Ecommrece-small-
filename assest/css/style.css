@@ -13,8 +13,14 @@
 #navBar_ul li {
   padding: 0px 10px 0px 10px;
 }
-#right_icon a {
-  padding: 10px;
+#right_icon a:not(#right_icon a:nth-child(2)) {
+padding:20px;
+}
+
+@media (width<=417px) {
+  #right_icon a:not(#right_icon a:nth-child(2)) {
+    padding:0px;
+    }
 }
 
 .image,
